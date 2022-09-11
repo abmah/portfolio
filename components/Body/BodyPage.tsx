@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Body.module.css";
 // import Typewriter from "typewriter-effect";
 export default function () {

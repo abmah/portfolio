@@ -20,16 +20,18 @@
 }
 .skillsTitle {
   color: white;
-  margin-top: 3vh;
+
   font-size: var(--step-4);
   margin-left: var(--space-xs-s);
   text-transform: uppercase;
   transition: 0.8s;
   opacity: 1;
 }
+.skillSubTitle {
+  font-size: var(--step-0);
+}
 
 .skillsTitleAfter {
-  margin-top: 3vh;
   opacity: 0;
   font-size: var(--step-4);
   margin-left: var(--space-xs-l);
@@ -47,6 +49,7 @@
 
 .skillCard {
   margin-top: var(--space-m);
+  cursor: pointer;
   height: 35vh;
   display: inline-block;
   width: 80%;
@@ -56,24 +59,62 @@
   max-width: 300px;
   transition: 0.2s ease-in-out;
 }
+.skillCardHidden {
+  margin-top: var(--space-m);
+
+  height: 35vh;
+  display: inline-block;
+  width: 80%;
+  font-size: var(--step-2);
+  border: 2px pink solid;
+  border-bottom: none;
+  max-width: 300px;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+}
+.skillCardTwo {
+  height: 35vh;
+  display: inline-block;
+  width: 80%;
+  font-size: var(--step-2);
+  border: 2px pink solid;
+  border-bottom: none;
+  max-width: 300px;
+  transition: 0.2s ease-in-out;
+}
+.skillCardTwoHidden {
+  height: 35vh;
+  display: inline-block;
+  width: 80%;
+  font-size: var(--step-2);
+  border: 2px pink solid;
+  border-bottom: none;
+  max-width: 300px;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+}
 
 .cardsContainer {
-  transition: 0.4s;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 1;
-  transform: translateX(20px);
+
+  /* animation: pop 1s infinite alternate; */
+}
+@keyframes pop {
+  0% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .cardsContainerHidden {
+  transition: all 0.1 ease-in-out;
   flex-direction: column;
   opacity: 0;
-}
-
-.skillCardTwo {
-  transition: 0.3s ease;
 }
 
 @media screen and (min-width: 720px) {
@@ -82,19 +123,19 @@
     justify-content: space-around;
   }
   .skillCardTwo {
-    margin-top: 40vh;
+    margin-top: 30vh;
   }
 }
 
 .skillCard:hover {
   transform: translateY(-30px);
-  cursor: grabbing;
 }
 
 .skillCardTitle {
   color: white;
   font-size: var(--step-1);
-
+  display: flex;
+  justify-content: space-between;
   text-transform: uppercase;
   font-family: "Lato";
 }
