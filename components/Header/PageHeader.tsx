@@ -10,12 +10,12 @@ export default function PageHeader() {
   }, []);
 
   function scrollFunction() {
-    if (document.documentElement.scrollTop > 200) {
+    if (document.documentElement.scrollTop > 290) {
       // activate
 
       setShouldHeaderMinimize(true);
     }
-    if (document.documentElement.scrollTop < 20) {
+    if (document.documentElement.scrollTop < 10) {
       setShouldHeaderMinimize(false);
     }
   }
@@ -33,7 +33,7 @@ export default function PageHeader() {
           <span className={styles.HeaderName}>A</span>
           <span className={styles.HeaderName}>.</span>
           <span className={styles.HeaderName}>B</span>
-          <span className={styles.HeaderName}>.</span>
+          <span className={`${styles.HeaderName} ${styles.dot}`}>.</span>
         </div>
         <div className={styles.HeaderTitle}>full-stack developer</div>
       </div>
