@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { SiRubygems } from "react-icons/si";
+
 import styles from "./Body.module.css";
 
-export default function () {
+export default function Body() {
   const [shouldHeaderMinimize, setShouldHeaderMinimize] = useState(0);
 
   useEffect(() => {

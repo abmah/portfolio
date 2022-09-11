@@ -1,6 +1,8 @@
+import styles from "./Project.module.css";
+
 export default function ProjectDizcord() {
   return (
-    <div>
+    <div className={styles.ProjectDizcord}>
       Projects
       <div>ProjectDizcord</div>
       <div>ProjectDizcord</div>
