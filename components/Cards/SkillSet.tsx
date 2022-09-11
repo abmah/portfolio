@@ -33,7 +33,13 @@ export default function SkillSet() {
         ref={skillItemOne}
       >
         <div className={`${styles.skillCard} ${styles.skillCardOne}`}>
-          Frontend developlment
+          <div className={styles.cardName}> Frontend developlment</div>
+          <div className={styles.middle}>
+            <div className={styles.text}>
+              I made a lot of website using these technologies and I can say
+              with confidence that I am comfortable with them.
+            </div>
+          </div>
           <div>
             <div className={styles.skillCardTitle}>
               <div>react</div>
@@ -64,7 +70,13 @@ export default function SkillSet() {
           </div>
         </div>
         <div className={`${styles.skillCard} ${styles.skillCardTwo}`}>
-          Backend developlment
+          <div className={styles.middle}>
+            <div className={styles.text}>
+              When Im not working on the frontend I like to work on the backend
+              because its much more calming and I can relax while working on it.
+            </div>
+          </div>
+          <div className={styles.cardName}> backend developlment</div>
           <div>
             <div className={styles.skillCardTitle}>
               <div>node js</div>

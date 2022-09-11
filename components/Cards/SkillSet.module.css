@@ -128,7 +128,16 @@
 }
 
 .skillCard:hover {
-  transform: translateY(-30px);
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skillCard:hover .skillCardTitle {
+  opacity: 0.05;
+}
+.skillCard:hover .cardName {
+  opacity: 0.05;
 }
 
 .skillCardTitle {
@@ -138,4 +147,29 @@
   justify-content: space-between;
   text-transform: uppercase;
   font-family: "Lato";
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.skillCard:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #e384e0;
+  font-family: monospace;
+  color: white;
+  font-size: var(--step--2);
+  position: relative;
+  height: 150px;
+  width: 200px;
 }

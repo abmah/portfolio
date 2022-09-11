@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./Body.module.css";
-// import Typewriter from "typewriter-effect";
+
 export default function () {
   return (
     <div className={styles.body}>

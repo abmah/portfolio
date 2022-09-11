@@ -3,7 +3,7 @@ import Head from "next/head";
 import BodyPage from "../components/Body/BodyPage";
 import SkillSet from "../components/Cards/SkillSet";
 import PageHeader from "../components/Header/PageHeader";
-
+import ProjectDizcord from "../components/Projects/ProjectDizcord";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -23,92 +23,7 @@ const Home: NextPage = () => {
       <PageHeader />
       <BodyPage />
       <SkillSet />
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
-      <div>lol</div>
+      <ProjectDizcord />
     </div>
   );
 };
