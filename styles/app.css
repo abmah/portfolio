@@ -10,7 +10,7 @@
   --step-6: clamp(3.92rem, calc(3.22rem + 3.52vw), 5.72rem);
   --step-7: clamp(4.7rem, calc(3.75rem + 4.78vw), 7.15rem);
   --step-8: clamp(5.64rem, calc(4.36rem + 6.43vw), 8.94rem);
-  --step-10: clamp(8.13rem, calc(5.85rem + 11.4vw), 13.97rem);
+  --step-10: clamp(8.13rem, calc(5.85rem + 22.4vw), 17.97rem);
 }
 
 :root {
@@ -35,6 +35,8 @@
   --space-2xl-3xl: clamp(5.25rem, calc(3.79rem + 7.32vw), 9rem);
 
   /* Custom pairs */
+  --space-2xl-3xl: clamp(5.25rem, calc(3.79rem + 7.32vw), 14rem);
+  --step-10-big: clamp(8.13rem, calc(5.85rem + 11.4vw), 13.97rem);
   --space-m-l: calc(
     ((var(--fc-m-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-m-min)) *
       var(--fluid-bp)

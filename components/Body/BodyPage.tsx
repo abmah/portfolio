@@ -1,16 +1,15 @@
 import React from "react";
 import styles from "./Body.module.css";
+// import Typewriter from "typewriter-effect";
 export default function () {
   return (
     <div className={styles.body}>
-      <div className={styles.welcome}>Welcome to My Portfolio</div>
       <div className={styles.about}>
         <div className={styles.aboutTitle}>About Me</div>
         <div className={styles.aboutText}>
-          I am a full-stack developer with a passion for creating beautiful
-          responsive websites and applications. I have a strong design
-          background and experience with both front-end and back-end
-          development.
+          Full-Stack developer that likes to make{" "}
+          <span className={styles.highlightPretty}>pretty</span> looking things,
+          using pretty looking code.
         </div>
       </div>
     </div>

@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 
 export default function PageHeader() {
   const [shouldHeaderMinimize, setShouldHeaderMinimize] = useState(false);
-  useEffect(() => {
-    window.onscroll = function () {
-      scrollFunction();
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.onscroll = function () {
+  //     scrollFunction();
+  //   };
+  // }, []);
 
   function scrollFunction() {
     if (document.documentElement.scrollTop > 290) {
@@ -35,7 +35,7 @@ export default function PageHeader() {
           <span className={styles.HeaderName}>B</span>
           <span className={`${styles.HeaderName} ${styles.dot}`}>.</span>
         </div>
-        <div className={styles.HeaderTitle}>full-stack developer</div>
+        {/* <div className={styles.HeaderTitle}>full-stack developer</div> */}
       </div>
       <div
         className={

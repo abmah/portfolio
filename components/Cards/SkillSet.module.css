@@ -1,0 +1,100 @@
+.skills {
+  margin-top: 200px;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-transform: uppercase;
+  background-color: #29272a;
+  background-size: 45.3px 85.2px;
+  background-size: 113.26px 213.01px;
+  font-family: "Lato";
+  height: 100vh;
+  background: linear-gradient(90deg, #85579c 75%, #513d4f 25%);
+  scroll-snap-align: start;
+}
+
+@media screen and (max-width: 900px) {
+  .skills {
+    background: #85579c;
+  }
+}
+.skillsTitle {
+  color: white;
+  margin-top: 3vh;
+  font-size: var(--step-4);
+  margin-left: var(--space-xs-s);
+  text-transform: uppercase;
+  transition: 0.8s;
+  opacity: 1;
+}
+
+.skillsTitleAfter {
+  margin-top: 3vh;
+  opacity: 0;
+  font-size: var(--step-4);
+  margin-left: var(--space-xs-l);
+  transition: 0.2s;
+}
+
+.skillsContainer {
+  transition: 0.2s;
+
+  opacity: 1;
+}
+.skillsContainerAfter {
+  opacity: 0;
+}
+
+.skillCard {
+  margin-top: var(--space-m);
+  height: 35vh;
+  display: inline-block;
+  width: 80%;
+  font-size: var(--step-2);
+  border: 2px pink solid;
+  border-bottom: none;
+  max-width: 300px;
+  transition: 0.2s ease-in-out;
+}
+
+.cardsContainer {
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transform: translateX(20px);
+}
+
+.cardsContainerHidden {
+  flex-direction: column;
+  opacity: 0;
+}
+
+.skillCardTwo {
+  transition: 0.3s ease;
+}
+
+@media screen and (min-width: 720px) {
+  .cardsContainer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .skillCardTwo {
+    margin-top: 40vh;
+  }
+}
+
+.skillCard:hover {
+  transform: translateY(-30px);
+  cursor: grabbing;
+}
+
+.skillCardTitle {
+  color: white;
+  font-size: var(--step-1);
+
+  text-transform: uppercase;
+  font-family: "Lato";
+}
