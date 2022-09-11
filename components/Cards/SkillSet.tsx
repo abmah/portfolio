@@ -73,7 +73,7 @@ export default function SkillSet() {
           <div className={styles.middle}>
             <div className={styles.text}>
               When Im not working on the frontend I like to work on the backend
-              because its much more calming and I can relax while working on it.
+              because its much more calming.
             </div>
           </div>
           <div className={styles.cardName}> backend developlment</div>

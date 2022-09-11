@@ -9,16 +9,16 @@ export default function PageHeader() {
   //   };
   // }, []);
 
-  function scrollFunction() {
-    if (document.documentElement.scrollTop > 290) {
-      // activate
+  // function scrollFunction() {
+  //   if (document.documentElement.scrollTop > 290) {
+  //     // activate
 
-      setShouldHeaderMinimize(true);
-    }
-    if (document.documentElement.scrollTop < 10) {
-      setShouldHeaderMinimize(false);
-    }
-  }
+  //     setShouldHeaderMinimize(true);
+  //   }
+  //   if (document.documentElement.scrollTop < 10) {
+  //     setShouldHeaderMinimize(false);
+  //   }
+  // }
 
   return (
     <div className={styles.header}>

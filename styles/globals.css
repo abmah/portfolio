@@ -10,6 +10,7 @@ body {
   background: linear-gradient(90deg, #4c3a69 75%, #001854 25%);
 
   color: #ff95a7;
+  background-color: rgb(131, 62, 108);
 }
 @media screen and (max-width: 900px) {
   body {
