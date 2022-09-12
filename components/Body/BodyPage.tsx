@@ -13,10 +13,11 @@ export default function Body() {
 
   function scrollFunction() {
     const distanceFromTop = Math.floor(document.documentElement.scrollTop / 10);
-    if (distanceFromTop > 30 && distanceFromTop < 50) {
+    if (distanceFromTop < 100) {
       setShouldHeaderMinimize(distanceFromTop);
     }
   }
+  console.log(shouldHeaderMinimize);
 
   // const dynamicStyle = {
   //   // background: `linear-gradient(90deg, #4c3a69 ${
