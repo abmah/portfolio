@@ -13,7 +13,7 @@ export default function Body() {
 
   function scrollFunction() {
     const distanceFromTop = Math.floor(document.documentElement.scrollTop / 10);
-    if (distanceFromTop < 100) {
+    if (distanceFromTop > 30 && distanceFromTop < 50) {
       setShouldHeaderMinimize(distanceFromTop);
     }
   }
@@ -29,6 +29,8 @@ export default function Body() {
   //   width: `${110}vw`,
   //   opacity: `${shouldHeaderMinimize / 100}`,
   // };
+
+  console.log(shouldHeaderMinimize);
 
   const moreStyles =
     shouldHeaderMinimize > 40 ? styles.pinkPillerMove : styles.pinkPiller;

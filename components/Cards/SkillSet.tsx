@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import styles from "./SkillSet.module.css";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { SiTailwindcss } from "react-icons/si";
@@ -12,6 +13,22 @@ import { useInView } from "react-intersection-observer";
 export default function SkillSet() {
   const { ref: skillsTitle, inView } = useInView();
   const { ref: skillItemOne, inView: skillItemOneInView } = useInView();
+
+  const [shouldHeaderMinimize, setShouldHeaderMinimize] = useState(0);
+
+  useEffect(() => {
+    window.onscroll = function () {
+      scrollFunction();
+    };
+  }, []);
+
+  function scrollFunction() {
+    const distanceFromTop = Math.floor(document.documentElement.scrollTop / 10);
+    if (distanceFromTop > 80) {
+      setShouldHeaderMinimize(distanceFromTop);
+    }
+  }
+  console.log(shouldHeaderMinimize);
 
   return (
     <div className={styles.skills}>
