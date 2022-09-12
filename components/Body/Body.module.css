@@ -74,21 +74,61 @@
 .pinkPiller {
   height: 120vh;
   width: 30vw;
-  background-color: rgb(202, 1, 139);
   position: relative;
   top: -50vh;
   opacity: 0.5;
   transition: 0.3s ease-in-out;
   transform: translateX(100vw);
+  background-color: #6b1a72;
+  opacity: 0.8;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #e145f7 25%,
+      transparent 25%,
+      transparent 75%,
+      #e145f7 75%,
+      #e145f7
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #e145f7 25%,
+      #6b1a72 25%,
+      #6b1a72 75%,
+      #e145f7 75%,
+      #e145f7
+    );
+  background-position: 0 0, 40px 40px;
+  background-size: 80px 80px;
 }
 
 .pinkPillerMove {
   transition: 0.3s ease-in-out;
   height: 120vh;
   width: 150vw;
-  background-color: rgb(243, 101, 198);
+  background-color: #6b1a72;
+  opacity: 0.8;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #e145f7 25%,
+      transparent 25%,
+      transparent 75%,
+      #e145f7 75%,
+      #e145f7
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #e145f7 25%,
+      #6b1a72 25%,
+      #6b1a72 75%,
+      #e145f7 75%,
+      #e145f7
+    );
+  background-position: 0 0, 40px 40px;
+  background-size: 80px 80px;
+
   position: relative;
   top: -50vh;
   opacity: 1;
+
   transform: translateX();
 }
