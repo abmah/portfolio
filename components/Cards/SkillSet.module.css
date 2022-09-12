@@ -9,7 +9,7 @@
   height: 100vh;
   background: linear-gradient(90deg, #85579c 75%, #513d4f 25%);
   scroll-snap-align: start;
-  border-top: 4px rgba(159, 9, 89, 0.4) solid;
+  /* border-top: 4px rgba(159, 9, 89, 0.4) solid; */
 }
 
 @media screen and (max-width: 900px) {

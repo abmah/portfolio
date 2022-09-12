@@ -34,7 +34,7 @@ export default function Body() {
   console.log(shouldHeaderMinimize);
 
   const moreStyles =
-    shouldHeaderMinimize > 40 ? styles.pinkPillerMove : styles.pinkPiller;
+    shouldHeaderMinimize > 60 ? styles.pinkPillerMove : styles.pinkPiller;
 
   return (
     <div className={styles.body}>
@@ -43,7 +43,8 @@ export default function Body() {
         <div className={styles.aboutText}>
           Full-Stack developer that likes to make{" "}
           <span className={styles.highlightPretty}>pretty</span> looking things,
-          using pretty looking code.
+          using <span className={styles.highlightPrettyTwo}>pretty</span>{" "}
+          looking code.
         </div>
       </div>
       <div className={moreStyles}></div>
