@@ -24,11 +24,14 @@ export default function Body() {
   //   // }%, #833E6C ${shouldHeaderMinimize}%)`,
   // };
 
-  const pillerStyles = {
-    left: `${90 - shouldHeaderMinimize}vw`,
-    width: `${110}vw`,
-    opacity: `${shouldHeaderMinimize / 100}`,
-  };
+  // const pillerStyles = {
+  //   left: `${90 - shouldHeaderMinimize}vw`,
+  //   width: `${110}vw`,
+  //   opacity: `${shouldHeaderMinimize / 100}`,
+  // };
+
+  const moreStyles =
+    shouldHeaderMinimize > 40 ? styles.pinkPillerMove : styles.pinkPiller;
 
   return (
     <div className={styles.body}>
@@ -40,9 +43,7 @@ export default function Body() {
           using pretty looking code.
         </div>
       </div>
-      <div style={pillerStyles} className={styles.pinkPiller}>
-        hello
-      </div>
+      <div className={moreStyles}></div>
     </div>
   );
 }
