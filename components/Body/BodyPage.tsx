@@ -17,16 +17,21 @@ export default function Body() {
       setShouldHeaderMinimize(distanceFromTop);
     }
   }
-  console.log(shouldHeaderMinimize);
 
-  const dynamicStyle = {
-    background: `linear-gradient(90deg, #4c3a69 ${
-      75 - shouldHeaderMinimize
-    }%, #001854 ${shouldHeaderMinimize}%)`,
+  // const dynamicStyle = {
+  //   // background: `linear-gradient(90deg, #4c3a69 ${
+  //   //   75 - shouldHeaderMinimize
+  //   // }%, #833E6C ${shouldHeaderMinimize}%)`,
+  // };
+
+  const pillerStyles = {
+    left: `${90 - shouldHeaderMinimize}vw`,
+    width: `${110}vw`,
+    opacity: `${shouldHeaderMinimize / 100}`,
   };
 
   return (
-    <div style={dynamicStyle} className={styles.body}>
+    <div className={styles.body}>
       <div className={styles.about}>
         <div className={styles.aboutTitle}>About Me</div>
         <div className={styles.aboutText}>
@@ -34,6 +39,9 @@ export default function Body() {
           <span className={styles.highlightPretty}>pretty</span> looking things,
           using pretty looking code.
         </div>
+      </div>
+      <div style={pillerStyles} className={styles.pinkPiller}>
+        hello
       </div>
     </div>
   );
