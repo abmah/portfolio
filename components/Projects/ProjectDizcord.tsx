@@ -82,7 +82,6 @@ export default function ProjectDizcord() {
       <div>ProjectDizcord</div>
       <div>ProjectDizcord</div>
       <div>ProjectDizcord</div>
-      <div>ProjectDizcord</div>
     </div>
   );
 }
