@@ -44,7 +44,7 @@ export default function ProjectDizcord() {
           <div>
             <img
               className={styles.dizcordImage1}
-              src="https://i.imgur.com/VNdR27Y.gif"
+              src="https://raw.githubusercontent.com/abmah/portfolio/main/images/dizcord.gif"
             />
             <div className={styles.dizcordButton1}>!!</div>
           </div>
