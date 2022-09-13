@@ -12,11 +12,7 @@ body {
   color: #ff95a7;
   background-color: rgb(131, 62, 108);
 }
-@media screen and (max-width: 900px) {
-  body {
-    background: #4c3a69;
-  }
-}
+
 a {
   color: inherit;
   text-decoration: none;

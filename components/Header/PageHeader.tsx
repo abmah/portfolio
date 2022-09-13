@@ -22,7 +22,7 @@ export default function PageHeader() {
   function scrollToProjects() {
     // make it so when this function runs it scrolls by 2000 pixels smoothly to the projects section
     window.scrollTo({
-      top: 2000,
+      top: 1710,
       behavior: "smooth",
     });
   }

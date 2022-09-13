@@ -12,7 +12,7 @@ import { DiNodejsSmall } from "react-icons/di";
 import { useInView } from "react-intersection-observer";
 export default function SkillSet() {
   const { ref: skillsTitle, inView } = useInView();
-  const { ref: skillItemOne, inView: skillItemOneInView } = useInView();
+  // const { ref: skillItemOne, inView: skillItemOneInView } = useInView();
 
   // const [shouldHeaderMinimize, setShouldHeaderMinimize] = useState(0);
 
@@ -43,11 +43,11 @@ export default function SkillSet() {
       </div>
       <div
         className={
-          skillItemOneInView
-            ? styles.cardsContainer
-            : styles.cardsContainerHidden
+          // skillItemOneInView
+          styles.cardsContainer
+          // styles.cardsContainerHidden
         }
-        ref={skillItemOne}
+        // ref={skillItemOne}
       >
         <div className={`${styles.skillCard} ${styles.skillCardOne}`}>
           <div className={styles.cardName}> Frontend developlment</div>
