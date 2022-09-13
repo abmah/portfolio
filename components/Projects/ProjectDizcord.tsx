@@ -59,28 +59,3 @@ export default function ProjectDizcord() {
     </div>
   );
 }
-
-{
-  /* <img
-          className={styles.dizcordMobile}
-          src="https://i.imgur.com/xwvG0xj.png"
-        /> */
-}
-
-{
-  /* <Tilt style={picStyles2} className={styles.divTilt}>
-          <img
-            className={styles.dizcordMobile}
-            src="https://i.imgur.com/xwvG0xj.png"
-          />
-        </Tilt> */
-}
-
-{
-  /* <Tilt style={picStyles} className={styles.divTilt}>
-          <img
-            className={styles.dizcordType}
-            src="https://i.imgur.com/tmFFqNV.png"
-          />
-        </Tilt> */
-}
