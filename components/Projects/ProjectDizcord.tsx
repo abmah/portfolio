@@ -1,6 +1,5 @@
 import styles from "./Project.module.css";
 
-// @ts-ignore
 import Tilt from "react-vanilla-tilt";
 import { DiGithub, DiGithubAlt, DiGithubBadge, DiReact } from "react-icons/di";
 import { SiMongodb, SiNextdotjs, SiSocketdotio } from "react-icons/si";
