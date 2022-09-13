@@ -33,7 +33,7 @@ export default function ProjectDizcord() {
         </div>
         <p className={styles.DizcordParagraph}>
           Dizcord is a full-stack web chatting application that allows users to
-          see other people's messages while they are typing.
+          see other peoples messages while they are typing.
         </p>
         <Tilt
           options={{ transition: false, reset: false }}
