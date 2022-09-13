@@ -69,7 +69,7 @@
 }
 
 .githubLogo {
-  animation: jumbing 0.4s infinite;
+  animation: jumbing 0.4s infinite ease-in-out;
   animation-play-state: paused;
 }
 .dizcordlink:hover .githubLogo {
