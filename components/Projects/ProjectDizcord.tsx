@@ -20,14 +20,12 @@ export default function ProjectDizcord() {
         <h1>Project Dizcord</h1>
         <div className={styles.Dizcordlinks}>
           <a
-            target="_blank"
             href="https://github.com/abmah/dizcord"
             className={styles.dizcordlink}
           >
             code <DiGithubBadge className={styles.githubLogo} />
           </a>
           <a
-            target="_blank"
             href="https://dizcorddds.herokuapp.com/"
             className={styles.dizcordlink}
           >
