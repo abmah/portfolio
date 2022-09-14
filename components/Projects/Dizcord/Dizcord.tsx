@@ -17,16 +17,16 @@ export default function Projects() {
         <h1>Dizcord</h1>
         <div className={styles.Dizcordlinks}>
           <a
-            href="https://github.com/abmah/dizcord"
-            className={styles.dizcordlink}
-          >
-            code <DiGithubBadge className={styles.githubLogo} />
-          </a>
-          <a
             href="https://dizcorddds.herokuapp.com/"
             className={styles.dizcordlink}
           >
             live-demo
+          </a>
+          <a
+            href="https://github.com/abmah/dizcord"
+            className={styles.dizcordlink}
+          >
+            code <DiGithubBadge className={styles.githubLogo} />
           </a>
         </div>
         <p className={styles.DizcordParagraph}>

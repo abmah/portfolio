@@ -17,7 +17,6 @@ export default function Body() {
       setShouldHeaderMinimize(distanceFromTop);
     }
   }
-  console.log(shouldHeaderMinimize);
 
   // const dynamicStyle = {
   //   // background: `linear-gradient(90deg, #4c3a69 ${
@@ -30,8 +29,6 @@ export default function Body() {
   //   width: `${110}vw`,
   //   opacity: `${shouldHeaderMinimize / 100}`,
   // };
-
-  console.log(shouldHeaderMinimize);
 
   const moreStyles =
     shouldHeaderMinimize > 60 ? styles.pinkPillerMove : styles.pinkPiller;

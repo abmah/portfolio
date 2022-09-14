@@ -43,6 +43,7 @@ export default function Vscode() {
           this app is meant to be used as a portfolio
         </p>
       </div>
+      <div className={styles.partSection}></div>
     </div>
   );
 }

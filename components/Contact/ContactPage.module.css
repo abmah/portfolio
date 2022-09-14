@@ -1,6 +1,6 @@
 .contactpage {
-  height: 800px;
-  background-color: #513d4f;
+  height: 700px;
+  background-color: #492946;
   padding: 0;
   margin: 0;
   font-family: monospace;
@@ -10,27 +10,30 @@
   color: white;
   font-size: var(--step-2);
   text-align: center;
-  padding-top: 20px;
+  font-weight: 900;
+
+  margin-bottom: 2em;
 }
 
 .contactBody {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .socialsGroup {
   display: flex;
+
   width: 200px;
   justify-content: space-around;
   align-items: center;
-
+  margin-bottom: 0.5em;
   font-size: var(--step-1);
 }
 
 .LinkedinLogo {
-  animation: jumbing 0.2s infinite;
+  animation: jumbing 0.2s infinite forwards;
   animation-play-state: paused;
 }
 
@@ -53,3 +56,52 @@
     transform: translateY(0);
   }
 }
+.contactform {
+  margin-top: 3em;
+  background-color: rgb(127, 87, 128);
+  padding: 1em;
+  transition: 0.2s ease-in-out;
+  border: 4px dashed rgb(208, 121, 186);
+  width: 40vw;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 2em 0em;
+}
+.contactform > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  resize: none;
+  font-size: var(--step--1);
+}
+
+.contactforminner > input {
+  background-color: transparent;
+}
+
+.contactforminner > input:focus {
+  outline: none;
+  transition: 0.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+.contactforminner > input::placeholder {
+  color: white;
+}
+
+.contactforminner > button {
+  background-color: pink;
+  margin-top: 10px;
+  transition: 0.2s ease-in-out;
+}
+/* .contactforminner > button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(127, 87, 128);
+  transition: 0.2s ease-in-out;
+}
+.contactforminner > button:active {
+  transform: scale(0.95);
+} */

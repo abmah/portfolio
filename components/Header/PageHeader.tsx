@@ -51,7 +51,7 @@ export default function PageHeader() {
       >
         <ul className={styles.MenuList}>
           <li onClick={() => scrollToProjects(1710)}>projects</li>
-          <li onClick={() => scrollToProjects(2710)}>contact</li>
+          <li onClick={() => scrollToProjects(3710)}>contact</li>
         </ul>
       </div>
     </div>
