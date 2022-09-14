@@ -15,6 +15,8 @@ export default function Contact() {
   //   message: message,
   // };
   const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [wentWorng, setWentWrong] = useState(false);
   const handleSubmit = (e: {
     target: string | HTMLFormElement;
     preventDefault: () => void;
@@ -31,14 +33,22 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
           // @ts-ignore
           e.target.reset();
           setSending(false);
+          setSent(true);
+          setTimeout(() => {
+            setSent(false);
+          }, 3000);
         },
         (error) => {
           console.log(error.text);
           setSending(false);
+          setWentWrong(true);
+          setTimeout(() => {
+            setWentWrong(false);
+          }, 3000);
         }
       );
   };
@@ -69,6 +79,7 @@ export default function Contact() {
         </div>
 
         <div className={styles.contactform}>
+          <h1>send me a message:</h1>
           <form
             // @ts-ignore
             onSubmit={handleSubmit}
@@ -76,14 +87,16 @@ export default function Contact() {
             method="post"
           >
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input required type="text" name="name" id="name" />
 
             <label htmlFor="email">Email</label>
             <input type="email" name="email" id="email" required={true} />
 
             <label htmlFor="message">Message</label>
-            <input name="message" id="message" />
+            <input required name="message" id="message" />
             {sending ? <div>sending.....</div> : ""}
+            {sent ? <div>sent!</div> : ""}
+            {wentWorng ? <div>something went wrong!</div> : ""}
 
             <button disabled={sending}>Send!</button>
           </form>

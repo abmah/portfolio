@@ -1,5 +1,5 @@
 .contactpage {
-  height: 700px;
+  height: 750px;
   background-color: #492946;
   padding: 0;
   margin: 0;
@@ -105,3 +105,11 @@
 .contactforminner > button:active {
   transform: scale(0.95);
 } */
+
+.contactform > h1 {
+  text-align: center;
+  font-size: var(--step--1);
+}
+.contactforminner > button {
+  cursor: pointer;
+}
