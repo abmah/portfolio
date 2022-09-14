@@ -1,0 +1,55 @@
+.contactpage {
+  height: 800px;
+  background-color: #513d4f;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+.contactHeader {
+  color: white;
+  font-size: var(--step-2);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contactBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.socialsGroup {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: var(--step-1);
+}
+
+.LinkedinLogo {
+  animation: jumbing 0.2s infinite;
+  animation-play-state: paused;
+}
+
+.socialsGroup:hover .LinkedinLogo {
+  animation-play-state: running;
+}
+
+.socialsGroup > a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+@keyframes jumbing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

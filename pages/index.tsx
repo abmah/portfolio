@@ -2,8 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import BodyPage from "../components/Body/BodyPage";
 import SkillSet from "../components/Cards/SkillSet";
+import ContactPage from "../components/Contact/ContactPage";
 import PageHeader from "../components/Header/PageHeader";
-import ProjectDizcord from "../components/Projects/ProjectDizcord";
+import Projects from "../components/Projects/Projects";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -23,7 +24,8 @@ const Home: NextPage = () => {
       <PageHeader />
       <BodyPage />
       <SkillSet />
-      <ProjectDizcord />
+      <Projects />
+      <ContactPage />
     </div>
   );
 };

@@ -1,23 +1,20 @@
-import styles from "./Project.module.css";
+import styles from "./Dizcord.module.css";
 
 // @ts-ignore
 import Tilt from "react-vanilla-tilt";
-import { DiGithub, DiGithubAlt, DiGithubBadge, DiReact } from "react-icons/di";
-import { SiMongodb, SiNextdotjs, SiSocketdotio } from "react-icons/si";
-export default function ProjectDizcord() {
+import { DiGithubBadge } from "react-icons/di";
+
+export default function Projects() {
   const picStyles = {
     width: "fit-content",
     height: "fit-content",
   };
-  const picStyles2 = {
-    width: "fit-content",
-    height: "fit-content",
-  };
+
   return (
-    <div className={styles.ProjectDizcord}>
+    <div className={styles.Project}>
       <div className={styles.projectHeader}>personal projects</div>
       <div className={styles.imagesContainer}>
-        <h1>Project Dizcord</h1>
+        <h1>Dizcord</h1>
         <div className={styles.Dizcordlinks}>
           <a
             href="https://github.com/abmah/dizcord"
@@ -33,8 +30,8 @@ export default function ProjectDizcord() {
           </a>
         </div>
         <p className={styles.DizcordParagraph}>
-          Dizcord is a full-stack web chatting application that allows users to
-          see other peoples messages while they are typing.
+          Dizcord is a full-stack web chatting program that lets users read
+          other peoples messages as they type.
         </p>
         <Tilt
           options={{ transition: false, reset: false }}
@@ -52,10 +49,11 @@ export default function ProjectDizcord() {
 
         {/* <img src="https://i.imgur.com/vqOyN2l.gif" /> */}
         <p className={styles.DizcordParagraph2}>
-          this app has authintication, a connected working database, and a fully
-          functional chat rooms.
+          This program has authentication, a fully functional database, and chat
+          rooms.
         </p>
       </div>
+      <div className={styles.partSection}></div>
     </div>
   );
 }

@@ -19,10 +19,10 @@ export default function PageHeader() {
   //     setShouldHeaderMinimize(false);
   //   }
   // }
-  function scrollToProjects() {
+  function scrollToProjects(pixles: number) {
     // make it so when this function runs it scrolls by 2000 pixels smoothly to the projects section
     window.scrollTo({
-      top: 1710,
+      top: pixles,
       behavior: "smooth",
     });
   }
@@ -50,8 +50,8 @@ export default function PageHeader() {
         }
       >
         <ul className={styles.MenuList}>
-          <li onClick={scrollToProjects}>projects</li>
-          <li>contact</li>
+          <li onClick={() => scrollToProjects(1710)}>projects</li>
+          <li onClick={() => scrollToProjects(2710)}>contact</li>
         </ul>
       </div>
     </div>
