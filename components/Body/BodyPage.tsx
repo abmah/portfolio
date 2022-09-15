@@ -47,7 +47,7 @@ export default function Body() {
         </div>
         <div ref={cardsRef} className={CardsinView ? styles.show : styles.hide}>
           <div className={styles.aboutText}>
-            Full-Stack developer & designer that likes to make{" "}
+            Full-Stack developer & designer that loves to make{" "}
             <span className={styles.highlightPretty}>pretty</span> looking
             things, using{" "}
             <span className={styles.highlightPrettyTwo}>pretty</span> looking
