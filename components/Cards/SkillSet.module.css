@@ -6,7 +6,7 @@
   background-size: 45.3px 85.2px;
   background-size: 113.26px 213.01px;
   font-family: "Lato";
-  height: 100vh;
+  height: 800px;
   background: linear-gradient(90deg, #85579c 75%, #513d4f 25%);
   scroll-snap-align: start;
   /* border-top: 4px rgba(159, 9, 89, 0.4) solid; */
@@ -50,7 +50,7 @@
 .skillCard {
   margin-top: var(--space-m);
   cursor: pointer;
-  height: 35vh;
+  height: 270px;
   display: inline-block;
   width: 80%;
   font-size: var(--step-2);
@@ -63,7 +63,6 @@
 .skillCardHidden {
   margin-top: var(--space-m);
 
-  height: 35vh;
   display: inline-block;
   width: 80%;
   font-size: var(--step-2);
@@ -74,7 +73,6 @@
   opacity: 0;
 }
 .skillCardTwo {
-  height: 35vh;
   display: inline-block;
   width: 80%;
   font-size: var(--step-2);
@@ -82,6 +80,7 @@
   border-bottom: none;
   max-width: 300px;
   transition: 0.2s ease-in-out;
+  padding-bottom: 20px;
 }
 .skillCardTwoHidden {
   height: 35vh;
@@ -124,7 +123,7 @@
     justify-content: space-around;
   }
   .skillCardTwo {
-    margin-top: 30vh;
+    margin-top: 200px;
   }
 }
 

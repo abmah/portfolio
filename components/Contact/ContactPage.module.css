@@ -1,9 +1,16 @@
 .contactpage {
   height: 750px;
-  background-color: #492946;
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
   font-family: monospace;
+
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    #cccccc30 26%,
+    rgba(103, 35, 80, 0.985) 30%
+  );
+  transition: 0.3s ease-in-out;
 }
 
 .contactHeader {
@@ -16,15 +23,18 @@
 }
 
 .contactBody {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.contactBody:hover {
+}
 
 .socialsGroup {
   display: flex;
-
+  user-select: all;
   width: 200px;
   justify-content: space-around;
   align-items: center;
@@ -112,4 +122,19 @@
 }
 .contactforminner > button {
   cursor: pointer;
+  align-items: flex-end;
+}
+
+/* .light {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40vh;
+} */
+/* .contactBody {
+  animation: letter-flicker 4s infinite forwards;
+} */
+
+.emailSend {
+  margin-right: 10px;
 }

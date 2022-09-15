@@ -1,0 +1,13 @@
+.light {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    #ffeeaa30 26%,
+    rgba(0, 0, 0, 0.985) 30%
+  );
+  transition: 0.3s ease-in-out;
+}

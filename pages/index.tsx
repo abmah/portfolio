@@ -5,6 +5,7 @@ import SkillSet from "../components/Cards/SkillSet";
 import ContactPage from "../components/Contact/ContactPage";
 import PageHeader from "../components/Header/PageHeader";
 import Projects from "../components/Projects/Projects";
+import TestPage from "../components/Test/TestPage";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
       <SkillSet />
       <Projects />
       <ContactPage />
+      {/* <TestPage /> */}
     </div>
   );
 };

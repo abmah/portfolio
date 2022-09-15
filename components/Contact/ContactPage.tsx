@@ -1,7 +1,8 @@
 import React from "react";
 import { DiGithubAlt, DiGithubBadge } from "react-icons/di";
+import { useState, useEffect } from "react";
 import { SiLinkedin } from "react-icons/si";
-import { useState } from "react";
+import { BiMailSend } from "react-icons/bi";
 import styles from "./ContactPage.module.css";
 import emailjs from "emailjs-com";
 export default function Contact() {
@@ -53,6 +54,22 @@ export default function Contact() {
       );
   };
 
+  const [x, setX] = React.useState(0);
+  const [y, setY] = React.useState(0);
+  useEffect(() => {
+    // mouse event
+    document.addEventListener("mousemove", (e) => {
+      // console.log(e.x, e.y);
+      setX(e.x);
+      setY(e.y);
+    });
+  }, []);
+
+  const styling = {
+    "--x": x + "px",
+    "--y": y + "px",
+  };
+
   // const handleChange = (e: { target: { name: string; value: string } }) => {
   //   if (e.target.name === "name") {
   //     setName(e.target.value);
@@ -64,9 +81,18 @@ export default function Contact() {
   // };
 
   return (
-    <div className={styles.contactpage}>
+    /*@ts-ignore */
+    <div style={styling} className={styles.contactpage}>
+      <div className={styles.light}></div>
       <div className={styles.contactHeader}>Get in touch</div>
       <div className={styles.contactBody}>
+        <div className={styles.socialsGroup}>
+          <div className={styles.socialsGroup}>
+            <a href="mailto: 1234@example.com">
+              <div className={styles.emailSend}> ab.mahasnh@gmail.com</div>
+            </a>
+          </div>
+        </div>
         <div className={styles.socialsGroup}>
           <a href="https://www.linkedin.com/in/ab-mahasnh-23672323a/">
             LinkedIn
