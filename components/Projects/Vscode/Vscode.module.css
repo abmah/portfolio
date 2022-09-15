@@ -25,12 +25,12 @@
 }
 
 .dizcordImage1 {
-  max-width: 800px;
+  max-width: 500px;
   width: 95vw;
   border-radius: 16px;
 }
 .dizcordImage2 {
-  max-width: 700px;
+  max-width: 600px;
   width: 85vw;
   border-radius: 16px;
 }
@@ -101,4 +101,16 @@
 .partSection {
   background-color: pink;
   height: 10px;
+}
+
+.show2 {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.hide2 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-30px);
 }

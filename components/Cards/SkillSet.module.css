@@ -9,7 +9,7 @@
   height: 800px;
   background: linear-gradient(90deg, #85579c 75%, #513d4f 25%);
   scroll-snap-align: start;
-  /* border-top: 4px rgba(159, 9, 89, 0.4) solid; */
+
   min-height: 800px;
 }
 
@@ -38,21 +38,12 @@
   transition: 0.2s;
 }
 
-.skillsContainer {
-  transition: 0.2s;
-
-  opacity: 1;
-}
-.skillsContainerAfter {
-  opacity: 0;
-}
-
 .skillCard {
   margin-top: var(--space-m);
   cursor: pointer;
   height: 270px;
   display: inline-block;
-  width: 80%;
+  width: 100%;
   font-size: var(--step-2);
   border: 2px pink solid;
   border-bottom: none;
@@ -60,7 +51,7 @@
   transition: 0.2s ease-in-out;
   margin-bottom: 10px;
 }
-.skillCardHidden {
+/* .skillCardHidden {
   margin-top: var(--space-m);
 
   display: inline-block;
@@ -71,10 +62,10 @@
   max-width: 300px;
   transition: 0.2s ease-in-out;
   opacity: 0;
-}
+} */
 .skillCardTwo {
   display: inline-block;
-  width: 80%;
+  width: 100%;
   font-size: var(--step-2);
   border: 2px pink solid;
   border-bottom: none;
@@ -82,7 +73,7 @@
   transition: 0.2s ease-in-out;
   padding-bottom: 20px;
 }
-.skillCardTwoHidden {
+/* .skillCardTwoHidden {
   height: 35vh;
   display: inline-block;
   width: 80%;
@@ -92,7 +83,7 @@
   max-width: 300px;
   transition: 0.2s ease-in-out;
   opacity: 0;
-}
+} */
 
 .cardsContainer {
   display: flex;
@@ -102,20 +93,20 @@
 
   /* animation: pop 1s infinite alternate; */
 }
-@keyframes pop {
+/* @keyframes pop {
   0% {
     transform: scale(0.98);
   }
   100% {
     transform: scale(1);
   }
-}
+} */
 
-.cardsContainerHidden {
+/* .cardsContainerHidden {
   transition: all 0.1 ease-in-out;
   flex-direction: column;
   opacity: 0;
-}
+} */
 
 @media screen and (min-width: 720px) {
   .cardsContainer {
@@ -174,4 +165,28 @@
   position: relative;
   height: 150px;
   width: 200px;
+}
+
+.show {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.hide {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(30px);
+}
+
+.show2 {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.hide2 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-30px);
 }

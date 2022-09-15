@@ -5,6 +5,7 @@ import { SiLinkedin } from "react-icons/si";
 import { BiMailSend } from "react-icons/bi";
 import styles from "./ContactPage.module.css";
 import emailjs from "emailjs-com";
+import { useInView } from "react-intersection-observer";
 export default function Contact() {
   // const [name, setName] = useState("");
   // const [email, setEmail] = useState("");
@@ -54,6 +55,12 @@ export default function Contact() {
       );
   };
 
+  const { ref: titleRef, inView: titleInView } = useInView({ delay: 50 });
+  const { ref: linksRef, inView: linksInView } = useInView({ delay: 100 });
+  const { ref: formRef, inView: fromInView } = useInView({
+    delay: 50,
+  });
+
   const [x, setX] = React.useState(0);
   const [y, setY] = React.useState(0);
   useEffect(() => {
@@ -84,48 +91,53 @@ export default function Contact() {
     /*@ts-ignore */
     <div style={styling} className={styles.contactpage}>
       <div className={styles.light}></div>
-      <div className={styles.contactHeader}>Get in touch</div>
+      <div ref={titleRef} className={titleInView ? styles.show : styles.hide}>
+        <div className={styles.contactHeader}>Get in touch</div>
+      </div>
       <div className={styles.contactBody}>
-        <div className={styles.socialsGroup}>
+        <div ref={linksRef} className={linksInView ? styles.show : styles.hide}>
           <div className={styles.socialsGroup}>
-            <a href="mailto: 1234@example.com">
-              <div className={styles.emailSend}> ab.mahasnh@gmail.com</div>
+            <div className={styles.socialsGroup}>
+              <a href="mailto: 1234@example.com">
+                <div className={styles.emailSend}> ab.mahasnh@gmail.com</div>
+              </a>
+            </div>
+          </div>
+          <div className={styles.socialsGroup}>
+            <a href="https://www.linkedin.com/in/ab-mahasnh-23672323a/">
+              LinkedIn
             </a>
+            <SiLinkedin className={styles.LinkedinLogo} />
+          </div>
+          <div className={styles.socialsGroup}>
+            <a href="https://github.com/abmah">Github</a>
+            <DiGithubAlt className={styles.LinkedinLogo} />
           </div>
         </div>
-        <div className={styles.socialsGroup}>
-          <a href="https://www.linkedin.com/in/ab-mahasnh-23672323a/">
-            LinkedIn
-          </a>
-          <SiLinkedin className={styles.LinkedinLogo} />
-        </div>
-        <div className={styles.socialsGroup}>
-          <a href="https://github.com/abmah">Github</a>
-          <DiGithubAlt className={styles.LinkedinLogo} />
-        </div>
+        <div ref={formRef} className={fromInView ? styles.show : styles.hide}>
+          <div className={styles.contactform}>
+            <h1>send me a message:</h1>
+            <form
+              // @ts-ignore
+              onSubmit={handleSubmit}
+              className={styles.contactforminner}
+              method="post"
+            >
+              <label htmlFor="name">Name</label>
+              <input required type="text" name="name" id="name" />
 
-        <div className={styles.contactform}>
-          <h1>send me a message:</h1>
-          <form
-            // @ts-ignore
-            onSubmit={handleSubmit}
-            className={styles.contactforminner}
-            method="post"
-          >
-            <label htmlFor="name">Name</label>
-            <input required type="text" name="name" id="name" />
+              <label htmlFor="email">Email</label>
+              <input type="email" name="email" id="email" required={true} />
 
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email" required={true} />
+              <label htmlFor="message">Message</label>
+              <input required name="message" id="message" />
+              {sending ? <div>sending.....</div> : ""}
+              {sent ? <div>sent!</div> : ""}
+              {wentWorng ? <div>something went wrong!</div> : ""}
 
-            <label htmlFor="message">Message</label>
-            <input required name="message" id="message" />
-            {sending ? <div>sending.....</div> : ""}
-            {sent ? <div>sent!</div> : ""}
-            {wentWorng ? <div>something went wrong!</div> : ""}
-
-            <button disabled={sending}>Send!</button>
-          </form>
+              <button disabled={sending}>Send!</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

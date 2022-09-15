@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
-
+import { useInView } from "react-intersection-observer";
 import styles from "./Body.module.css";
 
 export default function Body() {
   const [shouldHeaderMinimize, setShouldHeaderMinimize] = useState(0);
-
+  const { ref: cardsRef, inView: CardsinView } = useInView({ threshold: 0.1 });
+  const { ref: cardsReftwo, inView: CardsinViewTwo } = useInView({
+    threshold: 0.1,
+  });
   useEffect(() => {
     window.onscroll = function () {
       scrollFunction();
@@ -36,12 +39,20 @@ export default function Body() {
   return (
     <div className={styles.body}>
       <div className={styles.about}>
-        <div className={styles.aboutTitle}>About Me</div>
-        <div className={styles.aboutText}>
-          Full-Stack developer that likes to make{" "}
-          <span className={styles.highlightPretty}>pretty</span> looking things,
-          using <span className={styles.highlightPrettyTwo}>pretty</span>{" "}
-          looking code.
+        <div
+          ref={cardsReftwo}
+          className={CardsinViewTwo ? styles.show2 : styles.hide2}
+        >
+          <div className={styles.aboutTitle}>About Me</div>
+        </div>
+        <div ref={cardsRef} className={CardsinView ? styles.show : styles.hide}>
+          <div className={styles.aboutText}>
+            Full-Stack developer & designer that likes to make{" "}
+            <span className={styles.highlightPretty}>pretty</span> looking
+            things, using{" "}
+            <span className={styles.highlightPrettyTwo}>pretty</span> looking
+            code.
+          </div>
         </div>
       </div>
       <div className={moreStyles}></div>

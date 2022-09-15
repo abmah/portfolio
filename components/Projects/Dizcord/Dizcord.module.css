@@ -3,35 +3,16 @@
   font-family: monospace;
 }
 
-.projectHeader {
-  font-size: var(--step-4);
-  font-weight: 900;
-  text-transform: uppercase;
-  background-color: rgb(116, 59, 81);
-}
-
 .imagesContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.imagesContainer2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(66, 81, 131);
-}
 
 .dizcordImage1 {
-  max-width: 800px;
-  width: 95vw;
-  border-radius: 16px;
-}
-.dizcordImage2 {
   max-width: 700px;
-  width: 75vw;
+  width: 95vw;
   border-radius: 16px;
 }
 
@@ -69,7 +50,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 5px;
   font-size: var(--step-0);
   color: pink;
   text-align: center;
@@ -101,4 +82,15 @@
 .partSection {
   background-color: pink;
   height: 10px;
+}
+.show {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.hide {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(30px);
 }

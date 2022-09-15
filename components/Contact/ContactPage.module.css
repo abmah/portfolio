@@ -1,5 +1,5 @@
 .contactpage {
-  height: 750px;
+  height: 700px;
   overflow-x: hidden;
   padding: 0;
   margin: 0;
@@ -137,4 +137,14 @@
 
 .emailSend {
   margin-right: 10px;
+}
+
+.show {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.hide {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
