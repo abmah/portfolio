@@ -7,15 +7,30 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   /* background: linear-gradient(90deg, #4c3a69 75%, #001854 25%); */
-  cursor: url("https://i.imgur.com/8Q5Z8Zm.png"), auto;
+  cursor: none;
   color: var(--font-pink);
   background-color: black;
   position: relative;
 }
-
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@media screen and (min-width: 608px) {
+  a {
+    cursor: none;
+  }
+  input {
+    cursor: none;
+  }
+}
+
+@media screen and (max-width: 608px) {
+  body,
+  html {
+    cursor: default;
+  }
 }
 
 * {

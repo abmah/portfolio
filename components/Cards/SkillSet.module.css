@@ -39,7 +39,7 @@
 
 .skillCard {
   margin-top: var(--space-m);
-  cursor: pointer;
+
   height: 270px;
   display: inline-block;
   width: 100%;

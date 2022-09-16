@@ -51,7 +51,6 @@
 
 .dizcordButton1:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 .DizcordParagraph {
   font-size: var(--step--1);
@@ -76,7 +75,6 @@
 }
 .dizcordlink:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .githubLogo {

@@ -55,7 +55,6 @@
 
 .socialsGroup > a:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 @keyframes jumbing {
   0% {
@@ -79,9 +78,9 @@
   max-width: 500px;
   padding: 2em 0em;
 }
-.contactform:hover {
+/* .contactform:hover {
   transform: translateY(-10px);
-}
+} */
 .contactform > form {
   display: flex;
   flex-direction: column;
@@ -127,7 +126,6 @@
   font-size: var(--step--1);
 }
 .contactforminner > button {
-  cursor: pointer;
   align-items: flex-end;
 }
 
