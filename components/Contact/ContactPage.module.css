@@ -6,12 +6,11 @@
   margin: 0;
   font-family: monospace;
   position: relative;
-  /* 
   background: radial-gradient(
     circle at var(--x) var(--y),
     #cccccc30 26%,
     rgba(103, 35, 80, 0.985) 30%
-  ); */
+  );
   transition: 0.3s ease-in-out;
 }
 
@@ -127,7 +126,7 @@
   align-items: flex-end;
 }
 
-.light {
+/* .light {
   position: absolute;
   top: 0;
   left: 0;
@@ -139,7 +138,7 @@
     #92929230 26%,
     rgba(39, 23, 34, 0.985) 30%
   );
-}
+} */
 /* .contactBody {
   animation: letter-flicker 4s infinite forwards;
 } */

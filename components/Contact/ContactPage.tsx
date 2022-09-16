@@ -90,9 +90,7 @@ export default function Contact() {
   return (
     /*@ts-ignore */
     <div style={styling} className={styles.contactpage}>
-      <div className={styles.budget}>
-        the budget was spent on the top section so there is no electricity here
-      </div>
+      <div className={styles.budget}></div>
       <div className={styles.light}></div>
       <div ref={titleRef} className={titleInView ? styles.show : styles.hide}>
         <div className={styles.contactHeader}>Get in touch</div>
