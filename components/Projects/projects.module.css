@@ -3,6 +3,8 @@
   font-weight: 100;
   text-transform: uppercase;
   font-family: monospace;
+  background-color: var(--pink);
+  color: white;
 }
 
 .show {

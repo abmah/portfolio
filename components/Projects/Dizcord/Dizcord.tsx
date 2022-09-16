@@ -77,7 +77,7 @@ export default function Dizcord() {
           </p>
         </div>
       </div>
-      <div className={styles.partSection}></div>
+      {/* <div className={styles.partSection}></div> */}
     </div>
   );
 }

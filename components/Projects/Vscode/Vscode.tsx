@@ -19,7 +19,7 @@ export default function Vscode() {
   const { ref: secondRef, inView: secondInView } = useInView({ delay: 50 });
   return (
     <div className={styles.Project}>
-      <div className={styles.partSection}></div>
+      {/* <div className={styles.partSection}></div> */}
       <div className={styles.imagesContainer2}>
         <div
           ref={titleRef}
@@ -77,7 +77,7 @@ export default function Vscode() {
           </p>
         </div>
       </div>
-      <div className={styles.partSection}></div>
+      {/* <div className={styles.partSection}></div> */}
     </div>
   );
 }

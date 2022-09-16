@@ -1,6 +1,7 @@
 .Project {
   overflow: hidden;
   font-family: monospace;
+  background-color: var(--pink);
 }
 
 .imagesContainer {

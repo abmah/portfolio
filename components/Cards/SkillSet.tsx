@@ -11,10 +11,17 @@ import { SiExpress } from "react-icons/si";
 import { DiNodejsSmall } from "react-icons/di";
 import { useInView } from "react-intersection-observer";
 export default function SkillSet() {
-  const { ref: skillsTitle, inView } = useInView({ threshold: 0.1 });
-  const { ref: cardsRef, inView: CardsinView } = useInView({ threshold: 0.1 });
-  const { ref: cardsReftwo, inView: CardsinViewTwo } = useInView({
+  const { ref: skillsTitle, inView } = useInView({
     threshold: 0.1,
+    delay: 100,
+  });
+  const { ref: cardsRef, inView: CardsinView } = useInView({
+    threshold: 0.1,
+    delay: 100,
+  });
+  const { ref: cardsReftwo, inView: CardsinViewTwo } = useInView({
+    threshold: 0.2,
+    delay: 150,
   });
 
   // <div

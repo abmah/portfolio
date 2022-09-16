@@ -1,6 +1,7 @@
 .Project {
   overflow: hidden;
   font-family: monospace;
+  background-color: var(--blue);
 }
 
 .projectHeader {
@@ -21,7 +22,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(66, 81, 131);
 }
 
 .dizcordImage1 {

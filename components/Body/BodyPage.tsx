@@ -55,7 +55,7 @@ export default function Body() {
           </div>
         </div>
       </div>
-      <div className={moreStyles}></div>
+      {/* <div className={moreStyles}></div> */}
     </div>
   );
 }
