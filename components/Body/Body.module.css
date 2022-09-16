@@ -1,6 +1,7 @@
 .body {
   overflow: hidden;
-  height: 700px;
+  position: relative;
+  height: 80vh;
   background-color: var(--pink);
 }
 
@@ -109,24 +110,27 @@
   transform: translateX(100vw);
   background-color: #6b1a72;
   opacity: 0;
+  background-color: #ffffff;
+
   background-image: repeating-linear-gradient(
       45deg,
-      #e145f7 25%,
+      #000000 25%,
       transparent 25%,
       transparent 75%,
-      #e145f7 75%,
-      #e145f7
+      #000000 75%,
+      #000000
     ),
     repeating-linear-gradient(
       45deg,
-      #e145f7 25%,
-      #6b1a72 25%,
-      #6b1a72 75%,
-      #e145f7 75%,
-      #e145f7
+      #000000 25%,
+      #ffffff 25%,
+      #ffffff 75%,
+      #000000 75%,
+      #000000
     );
-  background-position: 0 0, 40px 40px;
-  background-size: 80px 80px;
+  background-position: 0 0, 37px 37px;
+  background-size: 74px 74px;
+  z-index: 30;
 }
 
 .pinkPillerMove {
@@ -135,30 +139,33 @@
   width: 150vw;
   background-color: #6b1a72;
   opacity: 0.8;
+  background-color: #ffffff;
+  opacity: 0.8;
   background-image: repeating-linear-gradient(
       45deg,
-      #e145f7 25%,
+      #000000 25%,
       transparent 25%,
       transparent 75%,
-      #e145f7 75%,
-      #e145f7
+      #000000 75%,
+      #000000
     ),
     repeating-linear-gradient(
       45deg,
-      #e145f7 25%,
-      #6b1a72 25%,
-      #6b1a72 75%,
-      #e145f7 75%,
-      #e145f7
+      #000000 25%,
+      #ffffff 25%,
+      #ffffff 75%,
+      #000000 75%,
+      #000000
     );
-  background-position: 0 0, 40px 40px;
-  background-size: 80px 80px;
+  background-position: 0 0, 37px 37px;
+  background-size: 74px 74px;
 
   position: relative;
   top: -50vh;
   opacity: 1;
 
   transform: translateX();
+  z-index: 30;
 }
 
 .show {
@@ -183,4 +190,24 @@
   opacity: 0;
   transition: all 0.5s ease-in-out;
   transform: translateX(-30px);
+}
+
+.blob {
+  animation: rotate 60s infinite linear;
+  position: absolute;
+  z-index: 1;
+
+  mix-blend-mode: difference;
+  top: 100px;
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

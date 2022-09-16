@@ -7,9 +7,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   /* background: linear-gradient(90deg, #4c3a69 75%, #001854 25%); */
-
+  cursor: url("https://i.imgur.com/8Q5Z8Zm.png"), auto;
   color: var(--font-pink);
-  background-color: var(--pink);
+  background-color: black;
+  position: relative;
 }
 
 a {

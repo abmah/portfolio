@@ -5,6 +5,7 @@
   font-family: monospace;
   background-color: var(--pink);
   color: white;
+  height: 10vh;
 }
 
 .show {
@@ -19,13 +20,13 @@
   transform: translateY(30px);
 }
 
-.show2 {
+.show1 {
   opacity: 1;
   transition: all 0.5s ease-in-out;
   transform: translateX(0);
 }
 
-.hide2 {
+.hide1 {
   opacity: 0;
   transition: all 0.5s ease-in-out;
   transform: translateX(-30px);

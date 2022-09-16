@@ -12,6 +12,9 @@
   --step-8: clamp(5.64rem, calc(4.36rem + 6.43vw), 8.94rem);
   --step-10: clamp(8.13rem, calc(5.85rem + 22.4vw), 17.97rem);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --space-3xs: clamp(0.31rem, calc(0.29rem + 0.12vw), 0.38rem);

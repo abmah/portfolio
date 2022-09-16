@@ -79,6 +79,9 @@
   max-width: 500px;
   padding: 2em 0em;
 }
+.contactform:hover {
+  transform: translateY(-10px);
+}
 .contactform > form {
   display: flex;
   flex-direction: column;

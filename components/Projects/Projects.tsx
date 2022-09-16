@@ -7,7 +7,7 @@ export default function Projects() {
   const { ref, inView } = useInView();
   return (
     <>
-      <div ref={ref} className={inView ? styles.show : styles.hide}>
+      <div ref={ref} className={inView ? styles.show1 : styles.hide1}>
         <div className={styles.projectHeader}>personal projects</div>
       </div>
       <Dizcord />
