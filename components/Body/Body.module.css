@@ -2,6 +2,7 @@
   overflow: hidden;
   position: relative;
   height: 80vh;
+
   background-color: var(--pink);
 }
 
@@ -28,7 +29,7 @@
 
 .aboutTitle {
   color: rgb(255, 150, 234);
-  margin-top: 16vh;
+
   margin-bottom: var(--space-xs-s);
   font-size: var(--step-2);
   animation: changeFontFamily 0.5s infinite;
@@ -41,7 +42,7 @@
 
 .about {
   width: 100%;
-
+  margin-top: 16vh;
   font-size: var(--step-3);
   font-weight: 600;
   font-family: "Lato";

@@ -1,14 +1,7 @@
 .Project {
   overflow: hidden;
   font-family: monospace;
-  background-color: var(--blue);
-}
-
-.projectHeader {
-  font-size: var(--step-4);
-  font-weight: 900;
-  text-transform: uppercase;
-  background-color: rgb(116, 59, 81);
+  background-color: var(--pink);
 }
 
 .imagesContainer {

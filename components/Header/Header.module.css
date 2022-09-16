@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-
+  flex-direction: row;
   top: 0;
   z-index: 100;
 
@@ -14,7 +14,7 @@
 .HeaderNameContainer {
   margin-left: var(--space-s);
   animation: fadeIn 0.3s ease-in forwards;
-  font-size: var(--step-7);
+  font-size: 200px;
   /* transition: all 0.2s ease-in-out; */
   font-weight: 900;
   text-transform: uppercase;
@@ -89,6 +89,11 @@
   }
   .MenuList > li {
     margin-top: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
   }
 }
 

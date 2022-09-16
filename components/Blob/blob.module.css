@@ -1,12 +1,14 @@
 .blob {
   image-orientation: flip;
-  animation: rotate 14s infinite linear;
+  animation: rotate 45s infinite linear;
   position: absolute;
-  top: 00px;
+  top: 20vh;
   right: 10px;
   z-index: 1;
   mix-blend-mode: difference;
   pointer-events: none;
+  width: 120vw;
+  border: 1px solid rgba(0, 0, 0, 0.016);
 }
 @keyframes rotate {
   0% {
@@ -14,5 +16,12 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blob {
+    top: 70vh;
+    width: 200vw;
   }
 }

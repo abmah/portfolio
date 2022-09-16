@@ -1,6 +1,6 @@
 .contactpage {
-  height: 750px;
-  margin-top: 100px;
+  height: 700px;
+
   overflow-x: hidden;
   overflow-y: hidden;
   padding: 0;
@@ -17,9 +17,9 @@
 
 .contactHeader {
   color: white;
-  font-size: var(--step-2);
-  text-align: center;
-  font-weight: 900;
+  font-size: var(--step-3);
+
+  font-weight: 100;
 
   margin-bottom: 2em;
 }
@@ -68,11 +68,10 @@
   }
 }
 .contactform {
-  margin-top: 3em;
-  background-color: var(--pink);
-  padding: 1em;
+  margin-top: 1em;
+
   transition: 0.2s ease-in-out;
-  border: 4px dashed rgb(208, 121, 186);
+  /* border: 4px dashed rgb(208, 121, 186); */
   width: 40vw;
   min-width: 300px;
   max-width: 500px;
@@ -162,4 +161,24 @@
 
 .budget {
   color: white;
+}
+
+.blob {
+  animation: rotate 60s infinite linear;
+  position: absolute;
+  z-index: 1;
+
+  mix-blend-mode: difference;
+  top: 100px;
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

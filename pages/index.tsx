@@ -7,6 +7,8 @@ import PageHeader from "../components/Header/PageHeader";
 import Projects from "../components/Projects/Projects";
 import styles from "../styles/Home.module.css";
 import Cursor from "../components/Cursor/Cursor";
+import Blob from "../components/Blob/Blob";
+import About from "../components/About/About";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -24,6 +26,8 @@ const Home: NextPage = () => {
       <Cursor />
       <PageHeader />
       <BodyPage />
+      <About />
+      {/* <Blob /> */}
       <SkillSet />
       <Projects />
       <ContactPage />

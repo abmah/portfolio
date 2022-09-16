@@ -24,6 +24,9 @@ a {
   input {
     cursor: none;
   }
+  label {
+    cursor: none;
+  }
 }
 
 @media screen and (max-width: 608px) {

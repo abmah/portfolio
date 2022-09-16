@@ -1,0 +1,9 @@
+.about {
+  height: 800px;
+  font-family: Lato;
+  max-width: 800px;
+}
+
+.aboutText {
+  font-size: var(--step-3);
+}

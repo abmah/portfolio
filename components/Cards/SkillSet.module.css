@@ -2,12 +2,12 @@
   overflow-x: hidden;
   overflow-y: hidden;
   text-transform: uppercase;
-  background-color: #29272a;
+
   background-size: 45.3px 85.2px;
   background-size: 113.26px 213.01px;
   font-family: "Lato";
-  height: 800px;
-  background-color: var(--blue);
+  height: 900px;
+  /* background-color: var(--blue); */
   scroll-snap-align: start;
 }
 

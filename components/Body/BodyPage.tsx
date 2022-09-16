@@ -9,18 +9,18 @@ export default function Body() {
   const { ref: cardsReftwo, inView: CardsinViewTwo } = useInView({
     threshold: 0.1,
   });
-  useEffect(() => {
-    window.onscroll = function () {
-      scrollFunction();
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.onscroll = function () {
+  //     scrollFunction();
+  //   };
+  // }, []);
 
-  function scrollFunction() {
-    const distanceFromTop = Math.floor(document.documentElement.scrollTop / 10);
-    if (distanceFromTop < 100) {
-      setShouldHeaderMinimize(distanceFromTop);
-    }
-  }
+  // function scrollFunction() {
+  //   const distanceFromTop = Math.floor(document.documentElement.scrollTop / 10);
+  //   if (distanceFromTop < 100) {
+  //     setShouldHeaderMinimize(distanceFromTop);
+  //   }
+  // }
 
   // const dynamicStyle = {
   //   // background: `linear-gradient(90deg, #4c3a69 ${
@@ -34,8 +34,8 @@ export default function Body() {
   //   opacity: `${shouldHeaderMinimize / 100}`,
   // };
 
-  const moreStyles =
-    shouldHeaderMinimize > 60 ? styles.pinkPillerMove : styles.pinkPiller;
+  // const moreStyles =
+  //   shouldHeaderMinimize > 60 ? styles.pinkPillerMove : styles.pinkPiller;
 
   // const blobStyles = {
   //   transform: `translateX(${shouldHeaderMinimize / 3}vh)`,
@@ -69,9 +69,9 @@ export default function Body() {
           ref={cardsReftwo}
           className={CardsinViewTwo ? styles.show2 : styles.hide2}
         >
-          <div className={styles.aboutTitle}>About Me</div>
+          <div className={styles.aboutText}>Welcome to my portfolio</div>
         </div>
-        <div ref={cardsRef} className={CardsinView ? styles.show : styles.hide}>
+        {/* <div ref={cardsRef} className={CardsinView ? styles.show : styles.hide}>
           <div className={styles.aboutText}>
             Full-Stack developer & designer that loves to make{" "}
             <span className={styles.highlightPretty}>pretty</span> looking
@@ -79,19 +79,8 @@ export default function Body() {
             <span className={styles.highlightPrettyTwo}>pretty</span> looking
             code.
           </div>
-        </div>
+        </div> */}
       </div>
-      <svg
-        className={styles.blob}
-        viewBox="0 0 200 200"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill="#FFD6E8"
-          d="M35.5,-66.3C43.5,-57,45.7,-42.3,49.1,-30.3C52.6,-18.4,57.4,-9.2,58.7,0.7C60,10.7,57.8,21.4,51.7,28.9C45.7,36.3,35.8,40.6,26.5,50.6C17.2,60.6,8.6,76.4,-1.3,78.7C-11.2,81,-22.5,69.7,-34.4,61.2C-46.3,52.7,-58.9,47,-65.5,37.3C-72,27.5,-72.5,13.8,-71.6,0.6C-70.6,-12.7,-68.2,-25.3,-62.3,-36.2C-56.4,-47,-47,-56.1,-36,-63.7C-25.1,-71.3,-12.5,-77.6,0.6,-78.6C13.8,-79.7,27.6,-75.7,35.5,-66.3Z"
-          transform="translate(100 100)"
-        />
-      </svg>
 
       {/* <svg
         className={styles.blob}
@@ -104,7 +93,7 @@ export default function Body() {
           transform="translate(100 100)"
         />
       </svg> */}
-      <div className={moreStyles}></div>
+      {/* <div className={moreStyles}></div> */}
     </div>
   );
 }
