@@ -1,15 +1,17 @@
 .contactpage {
-  height: 700px;
+  height: 750px;
   overflow-x: hidden;
+  overflow-y: hidden;
   padding: 0;
   margin: 0;
   font-family: monospace;
-
+  position: relative;
+  /* 
   background: radial-gradient(
     circle at var(--x) var(--y),
     #cccccc30 26%,
     rgba(103, 35, 80, 0.985) 30%
-  );
+  ); */
   transition: 0.3s ease-in-out;
 }
 
@@ -125,12 +127,19 @@
   align-items: flex-end;
 }
 
-/* .light {
+.light {
+  position: absolute;
   top: 0;
   left: 0;
+  pointer-events: none;
   width: 100vw;
-  height: 40vh;
-} */
+  height: 120vh;
+  background: radial-gradient(
+    circle at var(--x) var(--y),
+    #92929230 26%,
+    rgba(39, 23, 34, 0.985) 30%
+  );
+}
 /* .contactBody {
   animation: letter-flicker 4s infinite forwards;
 } */
@@ -147,4 +156,8 @@
 .hide {
   opacity: 0;
   transition: all 0.5s ease-in-out;
+}
+
+.budget {
+  color: white;
 }

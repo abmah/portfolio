@@ -90,6 +90,9 @@ export default function Contact() {
   return (
     /*@ts-ignore */
     <div style={styling} className={styles.contactpage}>
+      <div className={styles.budget}>
+        the budget was spent on the top section so there is no electricity here
+      </div>
       <div className={styles.light}></div>
       <div ref={titleRef} className={titleInView ? styles.show : styles.hide}>
         <div className={styles.contactHeader}>Get in touch</div>
@@ -99,7 +102,7 @@ export default function Contact() {
           <div className={styles.socialsGroup}>
             <div className={styles.socialsGroup}>
               <a href="mailto: 1234@example.com">
-                <div className={styles.emailSend}> ab.mahasnh@gmail.com</div>
+                <div className={styles.emailSend}>ab.mahasnh@gmail.com</div>
               </a>
             </div>
           </div>
@@ -140,6 +143,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <div className={styles.light}></div>
     </div>
   );
 }
